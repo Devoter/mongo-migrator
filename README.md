@@ -51,7 +51,7 @@ There is a simple way to declare the migrations slice:
 // migrations/migrations.go
 package migrations
 
-import "github.com/Devoter/mongo-migrator/migrator/migration"
+import "github.com/Devoter/mongo-migrator/migration"
 
 // Migrations is a list of all available migrations.
 var Migrations = []migration.Migration{}
@@ -70,7 +70,7 @@ import (
 
 	"go.mongodb.org/mongo-driver/mongo"
 
-    "github.com/Devoter/mongo-migrator/migrator/migration"
+    "github.com/Devoter/mongo-migrator/migration"
 )
 
 func init() {
@@ -116,7 +116,7 @@ import (
     "go.mongodb.org/mongo-driver/mongo"
 
     "github.com/Devoter/mongo-migrator/migrator"
-    "github.com/Devoter/mongo-migrator/migrator/migration"
+    "github.com/Devoter/mongo-migrator/migration"
 )
 
 // InitializeMigrations initializes the database migrations collection.
@@ -145,7 +145,7 @@ import (
     "go.mongodb.org/mongo-driver/mongo"
 
     "github.com/Devoter/mongo-migrator/migrator"
-    "github.com/Devoter/mongo-migrator/migrator/migration"
+    "github.com/Devoter/mongo-migrator/migration"
 )
 
 // UpAuto applies all unapplied migrations.
@@ -176,7 +176,7 @@ import (
     "go.mongodb.org/mongo-driver/mongo"
 
     "github.com/Devoter/mongo-migrator/migrator"
-    "github.com/Devoter/mongo-migrator/migrator/migration"
+    "github.com/Devoter/mongo-migrator/migration"
 )
 
 // UpTo applyies all unapplied migrations to the target.
@@ -209,7 +209,7 @@ import (
     "go.mongodb.org/mongo-driver/mongo"
 
     "github.com/Devoter/mongo-migrator/migrator"
-    "github.com/Devoter/mongo-migrator/migrator/migration"
+    "github.com/Devoter/mongo-migrator/migration"
 )
 
 // Down reverts the last applied migration.
@@ -242,7 +242,7 @@ import (
     "go.mongodb.org/mongo-driver/mongo"
 
     "github.com/Devoter/mongo-migrator/migrator"
-    "github.com/Devoter/mongo-migrator/migrator/migration"
+    "github.com/Devoter/mongo-migrator/migration"
 )
 
 // Reset reverts all applied migrations.
@@ -275,7 +275,7 @@ import (
     "go.mongodb.org/mongo-driver/mongo"
 
     "github.com/Devoter/mongo-migrator/migrator"
-    "github.com/Devoter/mongo-migrator/migrator/migration"
+    "github.com/Devoter/mongo-migrator/migration"
 )
 
 // Version outputs the current database structure version.
@@ -308,7 +308,7 @@ import (
     "go.mongodb.org/mongo-driver/mongo"
 
     "github.com/Devoter/mongo-migrator/migrator"
-    "github.com/Devoter/mongo-migrator/migrator/migration"
+    "github.com/Devoter/mongo-migrator/migration"
 )
 
 // SetVersion changes the current database structure version number to the target.
@@ -341,7 +341,7 @@ import (
     "go.mongodb.org/mongo-driver/mongo"
 
     "github.com/Devoter/mongo-migrator/migrator"
-    "github.com/Devoter/mongo-migrator/migrator/migration"
+    "github.com/Devoter/mongo-migrator/migration"
 )
 
 func DirectCalls(client *mongo.Client, dbName string, migrations []migration.Migration, target int64) {
