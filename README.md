@@ -23,14 +23,6 @@ Mongo migrator is a library that provides migration management operations.
 
 ## Installation
 
-With [dep](https://github.com/golang/dep):
-
-```sh
-dep ensure -add github.com/Devoter/mongo-migrator
-```
-
-Without dep:
-
 ```sh
 go get -v github.com/Devoter/mongo-migrator
 ```
