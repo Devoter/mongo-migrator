@@ -21,7 +21,7 @@ func (mig *Migration) Less(migration *Migration) bool {
 
 // Eq returns `true` if migrations version are equal.
 func (mig *Migration) Eq(migration *Migration) bool {
-	return mig.Version == mig.Version
+	return mig.Version == migration.Version
 }
 
 // Migrations type declares a slice-type of `Migration` with an implementation of `sort.Sort` interface.
